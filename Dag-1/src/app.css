@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
+
+:root {
+  --primary-color: #27279b;
+  --secondary-color: #333;
+  --primary-text-color: #333;
+  --secondary-text-color: #5f9ea0;
+  --border-color: #888;
+  --dark-color: #212121;
+  --light-color: #f4f4f4;
+  --background-color: #2b2a2a;
+  --nav-bar-color: #333;
+  --table-background-color: #fff;
+  --separator-color: #c9c6c6;
+  --danger-color: #ab0909;
+  --title-color: #5f9ea0;
+}
+
+/* Reset... */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  color: #333;
+  background: url('./images/background.jpg') center center/cover no-repeat;
+  height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+main {
+  padding: 5rem 2rem;
+}
+
+h1,
+h2 {
+  color: #f4f4f4;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  padding: 0 0 1.2rem 0;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: #f4f4f4;
+  width: 100%;
+  min-width: 600px;
+}
+
+th {
+  text-align: left;
+}
+
+td,
+th {
+  padding: 0.2rem 0.1rem;
+}
+
+.page-title {
+  text-align: center;
+  color: #5f9ea0;
+  padding: 2rem 0 3rem 0;
+}
+
+.text-primary {
+  color: cadetblue;
+}
