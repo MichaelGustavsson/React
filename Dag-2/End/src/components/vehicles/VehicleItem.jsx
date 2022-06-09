@@ -5,13 +5,11 @@ const VehicleItem = ({ vehicle, handleDeleteVehicle }) => {
   // console.log(props);
 
   const onEditClickHandler = () => {
-    console.log(`Du vill ändra på bilen ${vehicle.vehicleName}`);
     navigate(`/vehicles/${vehicle.id}`);
   };
 
   const onDeleteClickHandler = () => {
-    console.log(`Du är i VehicleItem`);
-    handleDeleteVehicle(vehicle.vehicleId);
+    handleDeleteVehicle(vehicle.id);
   };
 
   return (

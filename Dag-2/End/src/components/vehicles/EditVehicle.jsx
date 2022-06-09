@@ -45,7 +45,6 @@ const EditVehicle = () => {
   };
 
   const onHandleRegNoTextChanged = (e) => {
-    console.log(e.target);
     setRegNo(e.target.value);
   };
 

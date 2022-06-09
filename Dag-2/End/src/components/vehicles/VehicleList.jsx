@@ -18,14 +18,22 @@ const VehicleList = () => {
 
     if (response.ok) {
       setVehicles(await response.json());
-      console.log(vehicles);
     } else {
       throw new Error('Oops något gick fel...');
     }
   };
 
-  const deleteVehicle = (id) => {
-    console.log(`Du har valt att ta bort bil med id: ${id}`);
+  const deleteVehicle = async (id) => {
+    const url = `http://localhost:4001/vehicles/${id}`;
+    const response = await fetch(url, {
+      method: 'DELETE',
+    });
+
+    if (response.status >= 200 && response.status <= 299) {
+      loadVehicles();
+    } else {
+      console.log('Det gick fel någonstans');
+    }
   };
 
   return (

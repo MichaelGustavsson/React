@@ -54,6 +54,14 @@ h2 {
   padding: 0 0 1.2rem 0;
 }
 
+input,
+textarea {
+  border: var(--border-color) solid 1px;
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  outline: none !important;
+}
+
 table {
   border-collapse: collapse;
   background-color: var(--light-color);
