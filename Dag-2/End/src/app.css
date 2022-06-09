@@ -28,6 +28,10 @@ body {
   color: #333;
   background: url('./images/background.jpg') center center/cover no-repeat;
   height: 100vh;
+}
+
+body,
+textarea {
   font-family: 'Fredoka', sans-serif;
 }
 

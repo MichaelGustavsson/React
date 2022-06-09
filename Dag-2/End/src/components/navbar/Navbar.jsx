@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
@@ -11,16 +12,13 @@ const Navbar = () => {
       </h1>
       <ul>
         <li>
-          <a href='./'>Start sida</a>
+          <NavLink to='/'>Start sida</NavLink>
         </li>
         <li>
-          <a href='#'>Lager fordon</a>
+          <NavLink to='/vehicles'>Lager fordon</NavLink>
         </li>
         <li>
-          <a href='#'>Lägg till nytt fordon</a>
-        </li>
-        <li>
-          <a href='#'>Logga In</a>
+          <NavLink to='/vehicles/add'>Lägg till nytt fordon</NavLink>
         </li>
       </ul>
     </nav>
