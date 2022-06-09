@@ -76,8 +76,6 @@ const EditVehicle = () => {
     const vehicle = {
       regNo,
       vehicleName: `${make} ${model}`,
-      make,
-      model,
       modelYear,
       mileage,
       imageUrl,
